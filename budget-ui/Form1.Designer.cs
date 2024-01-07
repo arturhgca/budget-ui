@@ -1,6 +1,6 @@
 ﻿namespace budget_ui
 {
-    partial class Budget
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -51,8 +51,8 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(dataGridView1);
-            splitContainer1.Size = new Size(1308, 745);
-            splitContainer1.SplitterDistance = 228;
+            splitContainer1.Size = new Size(800, 450);
+            splitContainer1.SplitterDistance = 150;
             splitContainer1.TabIndex = 0;
             // 
             // listBox1
@@ -60,10 +60,10 @@
             listBox1.Dock = DockStyle.Fill;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Items.AddRange(new object[] { "Home", "Assets & Liabilities", "Categories", "Sources & Sinks", "Incomes", "Expenses", "Transfers", "Exchanges", "Allocations" });
+            listBox1.Items.AddRange(new object[] { "(PH) Home", "(PH) Assets & Liabilities", "(PH) Categories", "(PH) Sources & Sinks", "Incomes", "Expenses", "Transfers", "Exchanges", "Allocations" });
             listBox1.Location = new Point(0, 0);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(228, 745);
+            listBox1.Size = new Size(150, 450);
             listBox1.TabIndex = 0;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
@@ -73,19 +73,17 @@
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1076, 745);
+            dataGridView1.Size = new Size(646, 450);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // Budget
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1308, 745);
+            ClientSize = new Size(800, 450);
             Controls.Add(splitContainer1);
-            Name = "Budget";
-            Text = "Budget";
-            Load += Form1_Load;
+            Name = "Form1";
+            Text = "Form1";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
