@@ -31,6 +31,7 @@
             splitContainer1 = new SplitContainer();
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
+            toolStrip1 = new ToolStrip();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            splitContainer1.Panel2.Controls.Add(toolStrip1);
             splitContainer1.Panel2.Controls.Add(dataGridView1);
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 150;
@@ -75,6 +77,15 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(646, 450);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellEndEdit += dataGridView1_CellEndEdit;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(646, 25);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
             // 
             // Form1
             // 
@@ -86,6 +97,7 @@
             Text = "Form1";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -97,5 +109,6 @@
         private SplitContainer splitContainer1;
         private ListBox listBox1;
         private DataGridView dataGridView1;
+        private ToolStrip toolStrip1;
     }
 }
