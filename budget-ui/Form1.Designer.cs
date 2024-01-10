@@ -77,7 +77,6 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(646, 450);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellEndEdit += dataGridView1_CellEndEdit;
             // 
             // toolStrip1
             // 
