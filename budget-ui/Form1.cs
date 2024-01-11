@@ -32,8 +32,8 @@ namespace budget_ui
 
         private static JArray RestGet(string uri)
         {
-            var request = (HttpWebRequest) WebRequest.Create(GetUrl(uri));
-            var response = (HttpWebResponse) request.GetResponse();
+            var request = (HttpWebRequest)WebRequest.Create(GetUrl(uri));
+            var response = (HttpWebResponse)request.GetResponse();
             var reader = new StreamReader(response.GetResponseStream());
             return JsonConvert.DeserializeObject<JArray>(reader.ReadToEnd());
         }
@@ -67,6 +67,11 @@ namespace budget_ui
                     throw new ArgumentException("Invalid item selected");
             }
             return uri;
+        }
+
+        private void splitContainer3_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
         }
     }
 }
